@@ -1,1 +1,159 @@
-/* Exide Care Styles */
+/* Exide Care Authorized Dealer | SC */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f8f8f8;
+    color:#222;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* HEADER */
+
+header{
+    background:#ffffff;
+    padding:18px 0;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    width:170px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#D71920;
+}
+
+.call-btn{
+    background:#D71920;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 22px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.call-btn:hover{
+    background:#111;
+}
+
+/* HERO */
+
+.hero{
+    padding:80px 0;
+    background:linear-gradient(135deg,#ffffff,#f2f2f2);
+}
+
+.hero .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.hero-content{
+    flex:1;
+}
+
+.hero-content span{
+    color:#C89B3C;
+    font-weight:bold;
+}
+
+.hero-content h1{
+    font-size:52px;
+    margin:20px 0;
+}
+
+.hero-content p{
+    color:#666;
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.hero-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.hero-buttons a{
+    text-decoration:none;
+    background:#D71920;
+    color:#fff;
+    padding:15px 30px;
+    border-radius:40px;
+    font-weight:600;
+}
+
+.hero-buttons a:last-child{
+    background:#111;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+header .container{
+flex-direction:column;
+gap:20px;
+}
+
+nav ul{
+flex-direction:column;
+text-align:center;
+}
+
+.hero .container{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:36px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+}
