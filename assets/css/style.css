@@ -125,23 +125,14 @@ a{color:inherit}
 @media(max-width:900px){.nav{display:none}.menu-toggle{display:block;order:3}.nav-call{margin-left:auto}.nav-wrap.menu-open .nav{display:flex;position:absolute;left:0;right:0;top:78px;background:#fff;border-bottom:1px solid var(--line);padding:15px 4%;flex-direction:column;align-items:stretch;gap:0}.nav-wrap.menu-open .nav a{padding:12px}.nav-wrap.menu-open .nav a:after{bottom:5px}.hero-grid,.split-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.battery-art{min-height:380px}.category-grid{grid-template-columns:repeat(2,1fr)}.product-grid{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:600px){.brand span{display:none}.nav-call{font-size:12px;padding:9px 13px}.hero{padding:65px 0}.hero h1{font-size:42px}.trust-row{gap:16px;flex-wrap:wrap}.battery{transform:scale(.82) rotate(3deg)}.hero-card{right:0}.section{padding:62px 0}.section-head,.cta-inner{align-items:flex-start;flex-direction:column}.category-grid,.product-grid{grid-template-columns:1fr}.page-hero{padding:55px 0}.page-hero h1{font-size:42px}.contact-grid{gap:28px}.footer-grid{grid-template-columns:1fr}.footer{padding-top:42px}}
 
-/* Featured products on the home hero */
-.hero-products{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;align-items:end;position:relative;z-index:2}
-.hero-product-card{background:#fff;border:1px solid #e6e1d8;border-radius:20px;padding:12px;text-decoration:none;color:var(--ink);box-shadow:0 18px 45px rgba(20,20,20,.10);transition:.25s;min-width:0}
-.hero-product-card:hover{transform:translateY(-7px);box-shadow:0 25px 55px rgba(20,20,20,.16);border-color:#d7c39c}
-.hero-product-card.featured{transform:translateY(-14px);border-color:#d4bd89}
-.hero-product-card.featured:hover{transform:translateY(-20px)}
-.hero-product-image{height:205px;border-radius:15px;display:grid;place-items:center;align-content:center;gap:4px;overflow:hidden;position:relative;color:#fff;background:linear-gradient(145deg,#252525,#0f0f0f)}
-.hero-product-image:before{content:"";position:absolute;width:150px;height:190px;border-radius:14px;background:linear-gradient(145deg,#343434,#111);box-shadow:12px 18px 25px rgba(0,0,0,.35);transform:rotate(4deg)}
-.hero-product-image:after{content:"";position:absolute;left:0;right:0;top:54%;height:30px;background:linear-gradient(90deg,var(--red),#d82a31,var(--red));transform:rotate(-4deg)}
-.hero-product-image span,.hero-product-image small{position:relative;z-index:2;font-family:'Manrope';font-weight:800}
-.hero-product-image span{font-size:25px;letter-spacing:.05em}
-.hero-product-image small{font-size:8px;letter-spacing:.18em}
-.hero-product-card>strong{display:block;font-family:'Manrope';font-size:15px;margin:12px 4px 2px}
-.hero-product-card>small{display:block;color:#777;font-size:11px;margin:0 4px 4px}
-.two-wheeler-art:before{height:150px;width:92px}
-.two-wheeler-art:after{top:58%}
-.inverter-art:before{height:170px;width:132px;border-radius:8px}
-.inverter-art:after{top:50%;height:18px}
-@media(max-width:900px){.hero-products{max-width:650px;margin:auto}.hero-product-image{height:180px}}
-@media(max-width:600px){.hero-products{gap:8px}.hero-product-card{padding:8px;border-radius:15px}.hero-product-image{height:145px;border-radius:11px}.hero-product-image:before{height:125px;width:75px}.hero-product-image span{font-size:17px}.hero-product-image small{font-size:6px}.hero-product-card>strong{font-size:11px;margin-top:8px}.hero-product-card>small{font-size:9px}.hero-product-card.featured{transform:translateY(-8px)}}
+
+/* Real Exide battery images on the homepage */
+.real-battery-products { display:flex; gap:16px; align-items:stretch; }
+.real-battery-products .hero-product-card { display:flex; flex-direction:column; justify-content:flex-start; background:#fff; border:1px solid #e7e1dc; border-radius:22px; padding:12px; text-decoration:none; color:inherit; overflow:hidden; box-shadow:0 12px 28px rgba(0,0,0,.06); min-width:0; }
+.real-battery-products .hero-product-card.featured { transform:translateY(-12px); border-color:#e4c37c; }
+.real-battery-products .hero-product-image.real-image { height:190px; background:#fff; border-radius:15px; overflow:hidden; display:flex; align-items:center; justify-content:center; }
+.real-battery-products .hero-product-image.real-image img { width:100%; height:100%; object-fit:contain; display:block; }
+.real-battery-products strong { margin:12px 4px 4px; font-size:15px; }
+.real-battery-products small { margin:0 4px 4px; opacity:.7; }
+@media (max-width:900px) { .real-battery-products { flex-wrap:wrap; } .real-battery-products .hero-product-card { flex:1 1 30%; } }
+@media (max-width:650px) { .real-battery-products .hero-product-card { flex:1 1 100%; } .real-battery-products .hero-product-card.featured { transform:none; } }
